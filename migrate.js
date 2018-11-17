@@ -43,7 +43,6 @@ async function migarateExcel (modelName) {
     await workbook.xlsx.readFile(migrateFilePath)
         .then(function(res) {
             // workbook.eachSheet(function(worksheet, sheetId) {
-            //     console.log(sheetId);
             // })
 
             const worksheet = workbook.getWorksheet(sheetId);
